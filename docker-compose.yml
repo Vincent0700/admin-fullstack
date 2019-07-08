@@ -7,3 +7,11 @@ services:
       - 27017:27017
     volumes:
       - ./data/mongodb:/data/db
+
+  nginx:
+    image: nginx:stable-alpine
+    restart: always
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "8090:80"
