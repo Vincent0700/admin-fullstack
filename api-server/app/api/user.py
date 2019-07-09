@@ -15,7 +15,6 @@ def get_user():
     data = request.json
     username = data.get('username')
     user = User.objects(username=username).first()
-    assert 1 == 2
 
     if user:
         result = json.loads(user.to_json())

@@ -2,4 +2,6 @@
 .idea/
 .vs/
 
-data/
+mongodb/data/*
+
+!.gitkeep

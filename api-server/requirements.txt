@@ -1,0 +1,17 @@
+Click==7.0
+Flask==1.1.0
+Flask-JWT-Extended==3.20.0
+flask-mongoengine==0.9.5
+Flask-WTF==0.14.2
+gevent==1.4.0
+greenlet==0.4.15
+gunicorn==19.9.0
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+mongoengine==0.18.2
+PyJWT==1.7.1
+pymongo==3.8.0
+six==1.12.0
+Werkzeug==0.15.4
+WTForms==2.2.1
