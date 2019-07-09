@@ -4,5 +4,6 @@
 
 mongodb/data/*
 prometheus/data/*
+grafana/data/*
 
 !.gitkeep
