@@ -15,9 +15,13 @@ def resp_json(code: Code, data=None) -> Response:
         except TypeError:
             code = Code.RESP_JSON_ERROR
 
+    ret_code = 200
+    if code < 1000:
+        ret_code = code
+
     data = json.dumps({
         'code': code,
         'msg': Code.msg[code],
         'data': data,
     })
-    return Response(data, mimetype='application/json')
+    return Response(data, status=ret_code, mimetype='application/json')
